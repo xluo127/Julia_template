@@ -1,5 +1,4 @@
 using Random
-using Pkg
 
 module MyPkg0
 
