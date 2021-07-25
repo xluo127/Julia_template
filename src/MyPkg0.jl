@@ -1,8 +1,8 @@
 module MyPkg0
 
-    export sog0
+    export sog
 
-    function sog0(x...)
+    function sog(x...)
         iVector = x[1]                        
         len = length(iVector)
         if len == 0
