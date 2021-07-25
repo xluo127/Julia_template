@@ -1,3 +1,6 @@
+using Random
+using Pkg
+
 module MyPkg0
 
     export sog
