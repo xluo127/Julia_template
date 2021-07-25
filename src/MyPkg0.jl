@@ -1,4 +1,3 @@
-using Random
 
 module MyPkg0
 
