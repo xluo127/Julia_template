@@ -24,7 +24,7 @@ module MyPkg0
             return nothing
         end
 
-        iVector = x[1] 
+        iVector = x 
         temp = iVector[1]
         if len == 1
             return [true]
