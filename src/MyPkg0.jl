@@ -18,12 +18,11 @@ module MyPkg0
 
     """
     function sog(x=[])                       
-        len = length(x)
-
         if x == []
             return nothing
         end
 
+        len = length(x)
         iVector = x 
         if len == 1
             return [true]
