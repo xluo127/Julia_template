@@ -2,7 +2,12 @@
 module MyPkg0
 
     export sog
+    """
+        sog(x...)
 
+    The function sog() takes a `Vector` type `x...` as its input with any possible length, and will return a `Bool Vector` with the same length as input. Values
+     `true` or `false` in the output depends on whether one element in the `Vector` is the start of a group.  
+    """
     function sog(x...)
         iVector = x[1]                        
         len = length(iVector)
