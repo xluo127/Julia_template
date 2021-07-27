@@ -20,12 +20,11 @@ module MyPkg0
     function sog(x=[])                       
         len = length(x)
 
-        if len == 0
+        if x == []
             return nothing
         end
 
         iVector = x 
-        temp = iVector[1]
         if len == 1
             return [true]
         end
