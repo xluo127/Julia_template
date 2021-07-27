@@ -18,7 +18,7 @@ module MyPkg0
 
     """
     function sog(x=[])                       
-        len = length(iVector)
+        len = length(x)
 
         if len == 0
             return nothing
