@@ -12,9 +12,9 @@ module MyPkg0
 
     Examples:
 
-        sog([1,2,2,2,1,3,3,1,1]) returns: [true, true, false, false, true, true, false, true, false]
-        sog() returns: nothing
-        sog(["a", "a", "a", 'a']) returns: [true, false, false, true]
+        sog([1,2,2,2,1,3,3,1,1]) `returns:` [true, true, false, false, true, true, false, true, false]
+        sog() `returns:` nothing
+        sog(["a", "a", "a", 'a']) `returns:` [true, false, false, true]
 
     """
     function sog(x=[])                       
