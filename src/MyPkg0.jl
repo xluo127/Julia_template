@@ -17,14 +17,14 @@ module MyPkg0
         sog(["a", "a", "a", 'a']) = [true, false, false, true]
 
     """
-    function sog(x=[]...)
-        iVector = x[1]                        
+    function sog(x=[])                       
         len = length(iVector)
 
         if len == 0
             return nothing
         end
 
+        iVector = x[1] 
         temp = iVector[1]
         if len == 1
             return [true]
