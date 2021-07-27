@@ -5,16 +5,26 @@ module MyPkg0
     """
         sog(x...)
 
-    The function sog() takes a `Vector` type `x...` as its input with any possible length, and will return a `Bool Vector` with the same length as input. Values
-     `true` or `false` in the output depends on whether one element in the `Vector` is the start of a group.  
+    The function sog() takes a `Vector` of any type `x...` as its input with any possible length, and will return a `Bool Vector` with the same length as input. Values
+     `true` or `false` in the output depends on whether one element in the `Vector` is the start of a group or not. The sog() will return 
+     'nothing' if the length of input is 0. As any type can be applied in the input, be careful! To check whether two elements `a` and `b` are treated
+    as the same, please call `isequal(a, b)` to see the result. 
+
+    Examples:
+
+        sog([1,2,2,2,1,3,3,1,1]) = [true, true, false, false, true, true, false, true, false]
+        sog() = nothing
+        sog(["a", "a", "a", 'a']) = [true, false, false, true]
+
     """
-    function sog(x...)
-        iVector = x[1]                        
-        len = length(iVector)
+    function sog(x=[]...)
         if len == 0
             return nothing
         end
-    
+        
+        iVector = x[1]                        
+        len = length(iVector)
+
         temp = iVector[1]
         if len == 1
             return [true]
